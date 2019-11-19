@@ -1,0 +1,25 @@
+- Cloud e SRE (Site Reability Engeneering )
+
+
+Uma equipe de SRE é responsável pela disponibilidade, latência, desempenho, eficiência, gerenciamento de
+mudanças,monitoramento,resposta a emergências e planejamento de capacidade de seus serviços.
+
+- Blame-free Postmortem culture
+
+opera sob uma cultura pós-morte livre de culpa, com o
+objetivo de expor falhas e aplicar engenharia para corrigi-las, em vez de evitá-las ou minimizá-las.
+
+- Gerenciamento de mudanças
+
+Implementando lançamentos progressivos (CI/CD)
+
+-Grafana 
+Ferramenta de monitoração de dashboard
+
+A plataforma de análise de métricas de monitoração de aplicações.
+O Grafana permite consultar, visualizar, alertar e entender suas métricas, não importa onde elas estejam armazenadas. Crie, explore e compartilhe painéis com sua equipe e promova uma cultura orientada a dados
+
+
+
+stackshare - site para pesquisar usos de ferramentas e direcionar carreira
+
