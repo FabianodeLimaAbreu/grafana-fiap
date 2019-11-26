@@ -1,0 +1,43 @@
+#abrir terminal do docker toobox e executar os comandos
+
+git clone https://github.com/daniboy82/grafana-sre/blob/master/docker-compose.yml
+
+git clone https://github.com/meob/my2Collector
+
+cd grafana-sre
+
+docker-machine ls
+
+#copiar IP sem porta e alterar a variavel GF_SERVER_ROOT_URL no docker-compose.yml (manter porta 3000)
+
+docker-compose up -d
+
+cd ../my2Collector/
+
+docker exec -i mysqlcontainer sh -c 'exec mysql -uroot -p"123456"' < my2.sql
+
+#acessar url http://192.168.99.100:3000 (mudar ip para a saida do docker-machine ls)
+
+#criar datasource com credenciais do mysql no grafana (usuario pode ser root, banco my2, senha 123456, ip do docker-machine ls e porta 3306)
+
+#acessar a lista de dashboard disponiveis em https://grafana.com/grafana/dashboards
+
+#escolher dashboards 2mysql https://grafana.com/grafana/dashboards/7991
+
+#copiar ID 7991 do dashboards
+
+#voltar no grafana e clicar em importar dashboard
+
+#colar o ID do dashboar na pagina de import e clicar em load
+
+#ecolher o datasource do mysql criado anteriormente
+
+
+
+
+
+
+
+
+
+
